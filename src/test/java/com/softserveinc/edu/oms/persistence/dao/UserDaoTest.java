@@ -183,10 +183,10 @@ public class UserDaoTest extends CleanUpDBTestCase {
 		user2 = userDao.insertOrUpdate(user2);
 		user3 = userDao.insertOrUpdate(user3);
 
-		List<User> result1 = userDao.findUsersBySearchValue("super",
+		List<User> result1 = userDao.findUsersBySearchValue("Super",
 				UserSelectField.ROLE, UserSelectWayCondition.STARTS_WITH, 0,
 				USERS_COUNT);
-		List<User> result2 = userDao.findUsersBySearchValue("adm",
+		List<User> result2 = userDao.findUsersBySearchValue("Adm",
 				UserSelectField.ROLE, UserSelectWayCondition.STARTS_WITH, 0,
 				USERS_COUNT);
 		List<User> result3 = userDao.findUsersBySearchValue("not existing",
@@ -606,10 +606,10 @@ public class UserDaoTest extends CleanUpDBTestCase {
 		List<User> result1 = userDao.findUsersBySearchValue("Ore",
 				UserSelectField.ALL, UserSelectWayCondition.STARTS_WITH, 0,
 				USERS_COUNT);
-		List<User> result2 = userDao.findUsersBySearchValue("v",
+		List<User> result2 = userDao.findUsersBySearchValue("V",
 				UserSelectField.ALL, UserSelectWayCondition.STARTS_WITH, 0,
 				USERS_COUNT);
-		List<User> result3 = userDao.findUsersBySearchValue("adm",
+		List<User> result3 = userDao.findUsersBySearchValue("Adm",
 				UserSelectField.ALL, UserSelectWayCondition.STARTS_WITH, 0,
 				USERS_COUNT);
 		List<User> result4 = userDao.findUsersBySearchValue("not existing",
@@ -720,22 +720,22 @@ public class UserDaoTest extends CleanUpDBTestCase {
 		user2 = new User();
 		user3 = new User();
 
-		user1.setFirstName("orest");
-		user1.setLastName("vovchack");
+		user1.setFirstName("Orest");
+		user1.setLastName("Vovchack");
 		user1.setLogin("ork");
 		user1.setPassword("123");
 		user1.setRole(role1);
 		user1.setEmail("email@gmail.com");
 
-		user2.setFirstName("ivanka");
-		user2.setLastName("horoshko");
+		user2.setFirstName("Ivanka");
+		user2.setLastName("Horoshko");
 		user2.setLogin("rudenjke");
 		user2.setPassword("123");
 		user2.setRole(role2);
 		user2.setEmail("email@gmail.com");
 
-		user3.setFirstName("vitalik");
-		user3.setLastName("nobis");
+		user3.setFirstName("Vitalik");
+		user3.setLastName("Nobis");
 		user3.setLogin("vnobis");
 		user3.setPassword("123");
 		user3.setRole(role1);
